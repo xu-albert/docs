@@ -1,0 +1,110 @@
+---
+title: "Quickstart"
+description: "Install and use Augment in a few quick steps."
+icon: "arrow-right"
+---
+
+import { Keyboard } from "/snippets/keyboard.mdx";
+import { Next } from "/snippets/next.mdx";
+
+Augment is the developer AI for teams that deeply understands your codebase and how you build software. Use Augment understand code, debug issues, and ship faster.
+
+This topic shows you how to install Augment, sync your repository, and start coding.
+
+## Install Augment
+
+You can install Augment as a Visual Studio Code extension, a JetBrains IDEs extension, or the Auggie CLI tool. Use the following options to install Augment:
+
+<CardGroup cols={3}>
+  <Card href="https://marketplace.visualstudio.com/items?itemName=augment.vscode-augment">
+    <img
+      className="w-12 h-12"
+      src="/images/vscode-icon.svg"
+      alt="Visual Studio Code"
+    />
+    <h2 className="pt-4 font-semibold text-base text-gray-800 dark:text-white">
+      Visual Studio Code
+    </h2>
+    <p>Install Augment for Visual Studio Code</p>
+  </Card>
+  <Card
+    className="bg-red"
+    href="https://plugins.jetbrains.com/plugin/24072-augment"
+  >
+    <img
+      className="w-12 h-12"
+      src="/images/jetbrains-icon.svg"
+      alt="JetBrains IDEs"
+    />
+    <h2 className="pt-4 font-semibold text-base text-gray-800 dark:text-white">
+      JetBrains IDEs
+    </h2>
+    <p>Install Augment for JetBrains IDEs, including WebStorm, PyCharm, and IntelliJ</p>
+  </Card>
+    <Card className="bg-red" href="/cli/setup-auggie/install-auggie-cli">
+    <img
+      className="w-12 h-12"
+      src="/images/cli.svg"
+      alt="Auggie CLI"
+    />
+    <h2 className="pt-4 font-semibold text-base text-gray-800 dark:text-white">
+      Auggie CLI
+    </h2>
+    <p>
+      All the power of Augment's agent, context engine, and tools in your terminal.
+    </p>
+  </Card>
+</CardGroup>
+
+## Sign in
+
+* Visual Studio Code and JetBrains IDEs: Select the Augment icon in your IDE side panel, or press <Keyboard shortcut="Cmd/Ctrl + L" /> to open the Augment panel. Select **Sign in to Augment** to sign in.
+* Auggie CLI: Run `auggie login` command in your terminal to sign in.
+
+For more information on how to sign in to or out of Augment, see the [Sign in and out](/setup-augment/sign-in) topic.
+
+## Index your workspace
+
+When you first use Augment, it's recommended to index your workspace. Indexing your workspace allows Augment to tailor suggestions to your codebase.
+
+* Visual Studio Code and JetBrains IDEs: Open the Augment panel. The panel prompts you to index your codebase.
+* Auggie CLI: Auggie CLI prompts you to index your codebase when you launch Auggie. (Launch Auggie by typing `auggie` in your terminal.)
+
+For more information about syncing your repository, see the [Index your workspace](https://docs.augmentcode.com/setup-augment/workspace-indexing) topic.
+
+After you sign in and sync your repository, you're ready to start coding with Augment. The following features are available in the Visual Studio Code extension.
+
+### Agent
+
+Augment Agent helps you complete end-to-end software development tasks like writing code, debugging, and testing. To access Agent, select the `Agent` tab in the Augment panel and use natural language to describe your tasks.
+
+For more information, see [Using Agent](https://docs.augmentcode.com/using-augment/agent).
+
+### Next Edit
+
+Next Edit suggests changes based on your context and recent changes. Next Edit lets you quickly make changes to your code, and still have full control to accept or reject suggested changes. When you're viewing code, jump to suggested changes from Next Edit by pressing `Cmd/Ctrl + ;`.
+
+For more information, see [Next Edit](https://docs.augmentcode.com/using-augment/next-edit).
+
+### Instructions
+
+Instructions is a feature that edits a specific code block or inserts code in a specific location. To use Instructions, first highlight the code you want to edit. Then press `Cmd/Ctrl + I` or place your cursor on the location you want to add new code.
+
+For more information, see [Instructions](https://docs.augmentcode.com/using-augment/instructions).
+
+### Code Completions
+
+Code Completions provides context-aware code suggestions as you type. To accept the full suggestions, press `Tab`. To accept suggestions one word at a time, press `Cmd/Ctrl + →` (right arrow).
+
+For more information, see [Completions](https://docs.augmentcode.com/using-augment/completions).
+
+## Code with Auggie CLI
+
+Type `auggie` in your terminal to begin using Auggie. Use Auggie to assist with coding, get feedback on PRs, and more. For more information how to use Auggie, see [Introducing Auggie CLI](https://docs.augmentcode.com/cli/overview).
+
+<Next>
+* [Disable GitHub Copilot](https://docs.augmentcode.com/troubleshooting/disable-copilot)
+* [Keyboard Shortcuts for Visual Studio Code](https://docs.augmentcode.com/setup-augment/vscode-keyboard-shortcuts)
+* [Index your workspace](https://docs.augmentcode.com/setup-augment/workspace-indexing)
+</Next>
+
